@@ -1,3 +1,5 @@
 steps:
   - label: "Example Test"
     command: echo "Hello!"
+  - label: Generating reset database pipeline
+    command: "./src/generate_pipeline.sh" | buildkite-agent pipeline upload
