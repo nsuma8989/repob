@@ -1,0 +1,4 @@
+steps:
+  - command: sleep 120
+    label: timeout test
+    timeout_in_minutes: 2
