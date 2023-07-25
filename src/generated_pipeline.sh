@@ -27,7 +27,7 @@ steps:
   - wait
 
   - label: "reset showcase database"
-    timeout_in_minutes: 2
+    timeout_in_minutes: 150
     command: sleep 120
     retry: *retry
 
