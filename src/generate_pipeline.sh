@@ -8,4 +8,3 @@ echo "steps:"
 echo "  - command: sleep 120"
 echo "    label: timeout test"
 echo "    timeout_in_minutes: 2"
-done
