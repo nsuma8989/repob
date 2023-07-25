@@ -1,4 +1,4 @@
-cat <<EOF >> ${GENERATED_PIPELINE}
+cat <<EOF >> generated_pipeline.yaml
 env:
  TERRITORY: $TERRITORY
  CELL: $CELL
@@ -33,6 +33,6 @@ steps:
 
 EOF
 
-cat "${GENERATED_PIPELINE}"
+cat generated_pipeline.yaml
 
-buildkite-agent pipeline upload "${GENERATED_PIPELINE}"
+buildkite-agent pipeline upload generated_pipeline.yaml
