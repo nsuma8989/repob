@@ -12,4 +12,4 @@ generate_json_file() {
 # Generate JSON files
 generate_json_file "file1" '{"name": "John", "age": 25}'
 generate_json_file "file2" '{"name": "Jane", "age": 30}'
-generate_json_file "file2" '{"name": "Jane", "age": 32}'
+generate_json_file "file2" '{"name": "Jane", "age": 36}'
