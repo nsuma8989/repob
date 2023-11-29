@@ -1,0 +1,12 @@
+steps:
+  - label: ":hammer_and_pick: ${STEP_ENVIRONMENT}"
+    command:
+      - echo "${KEY1}"
+      - echo "${KEY2}"
+    env:
+      - BUILDKITE_UNBLOCKER
+    notify:
+    - slack:
+        channels:
+          - "#test"
+        message: "${BUILDKITE_PIPELINE_NAME} to ${STEP_ENVIRONMENT} by $${BUILDKITE_UNBLOCKER}"
